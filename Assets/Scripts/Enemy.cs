@@ -21,10 +21,11 @@ public class Enemy : MonoBehaviour
     }
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "knife") {
+            GameController.playHurt = true;
             GameController.AddScore(100);
 
             GameObject.Instantiate(pickup,
-                player.transform.position + (player.transform.forward*2), Quaternion.identity);
+                player.transform.position + player.transform.forward*3 - player.transform.up, Quaternion.identity);
 
             Destroy(gameObject);
         }

@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameController.playing) {
+            return;
+        }
         float mH = 0f;
         while (true) {
             if (Input.GetAxis("Horizontal") == 0) {

@@ -22,6 +22,9 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameController.playing) {
+            return;
+        }
         if(a == 5) {
             slash.SetActive(false);
             a = 0;

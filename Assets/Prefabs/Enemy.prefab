@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  pickup: {fileID: 4873575137854882737, guid: b8c9892552408474588caf7a7172c21e, type: 3}
+  pickup: {fileID: 6728223891594330195, guid: c841d02c8d8b31c478f6caa3ed55953b, type: 3}
   pickupa: {fileID: 0}
 --- !u!136 &7598983554271146755
 CapsuleCollider:

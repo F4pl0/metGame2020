@@ -6,6 +6,7 @@ TagManager:
   tags:
   - knife
   - SpawnPoint
+  - pickup
   layers:
   - Default
   - TransparentFX

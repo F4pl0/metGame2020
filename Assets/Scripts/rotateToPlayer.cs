@@ -19,6 +19,7 @@ public class rotateToPlayer : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Player") {
+            GameController.playPowerup = true;
             GameController.AddScore(50);
             GameController.AddEnergy(5);
 
