@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Starfield Skybox/Demo/Textures/Back_Tex.png.meta
 guid: b692a498a0379a341872703d288b04af
 timeCreated: 1497132186
 licenseType: Store
+=======
+guid: d49bfb9da8b36d848be60da1b9e1d506
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6:Assets/Sprites/LEGENDA INVAZIJE GUALENDA.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4

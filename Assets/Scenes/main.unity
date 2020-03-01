@@ -153,10 +153,17 @@ RectTransform:
   m_Father: {fileID: 420138468}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 624.64996, y: 212.35004}
   m_SizeDelta: {x: 721.1, y: 208.2}
+=======
+  m_AnchorMin: {x: 0.104391314, y: 0.15913782}
+  m_AnchorMax: {x: 0.18952173, y: 0.351}
+  m_AnchoredPosition: {x: 228.80112, y: 0}
+  m_SizeDelta: {x: 234.4, y: 0}
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233613
 MonoBehaviour:
@@ -631,10 +638,17 @@ RectTransform:
   m_Father: {fileID: 420138468}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -214, y: 111.149994}
   m_SizeDelta: {x: 292.4, y: 92.6}
+=======
+  m_AnchorMin: {x: 0.49300003, y: 0.15913782}
+  m_AnchorMax: {x: 0.9502609, y: 0.36400002}
+  m_AnchoredPosition: {x: 202.15001, y: -79.137024}
+  m_SizeDelta: {x: -414.5, y: -54.699997}
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436187496
 MonoBehaviour:
@@ -1010,10 +1024,17 @@ RectTransform:
   m_Father: {fileID: 420138468}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 334.2, y: 113.5}
   m_SizeDelta: {x: 169.7, y: 97.3}
+=======
+  m_AnchorMin: {x: 0.104391314, y: 0.15913782}
+  m_AnchorMax: {x: 0.18952173, y: 0.351}
+  m_AnchoredPosition: {x: 118.39991, y: -51.100006}
+  m_SizeDelta: {x: 13.5, y: -47.7}
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991213160
 MonoBehaviour:
@@ -1645,8 +1666,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 2047887069}
   m_RootOrder: 4
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2012378540
 AudioSource:

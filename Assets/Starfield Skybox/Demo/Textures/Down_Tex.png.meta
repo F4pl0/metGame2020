@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Starfield Skybox/Demo/Textures/Down_Tex.png.meta
 guid: a3b2b45ab4da8b343ad09a56207d3910
 timeCreated: 1497132182
 licenseType: Store
+=======
+guid: ec7d2479052e38e44a6cb67a38f2e2d5
+>>>>>>> 03d16f7c0476b17deb6766c43ae6249cb48fe4a6:Assets/Sprites/meni.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
