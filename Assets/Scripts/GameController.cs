@@ -32,20 +32,20 @@ public class GameController : MonoBehaviour
             GameOver();
         }
         EnergyTxt.text = "" + energy;
-        ScoreTxt.text = "Score: " + score;
+        ScoreTxt.text = "" + score;
     }
 
     public static void DepleetEnergy(int energya) {
         energy -= energya;
     }
 
-    public void AddEnergy(int energya) {
+    public static void AddEnergy(int energya) {
         energy += energya;
         if(energy > 100) {
             energy = 100;
         }
     }
-    public void AddScore(int scorea) {
+    public static void AddScore(int scorea) {
         score += scorea;
     }
 

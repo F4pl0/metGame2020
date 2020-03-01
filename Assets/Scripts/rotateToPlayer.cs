@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class rotateToPlayer : MonoBehaviour
 {
-
     public GameObject player;
-    public GameObject pickup;
-    public GameObject pickupa;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +16,11 @@ public class Enemy : MonoBehaviour
     {
         gameObject.transform.LookAt(player.transform);
     }
-    void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "knife") {
-            GameController.AddScore(100);
 
-            GameObject.Instantiate(pickup,
-                player.transform.position + (player.transform.forward*2), Quaternion.identity);
+    void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Player") {
+            GameController.AddScore(50);
+            GameController.AddEnergy(5);
 
             Destroy(gameObject);
         }
