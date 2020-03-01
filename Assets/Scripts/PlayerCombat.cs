@@ -6,6 +6,9 @@ public class PlayerCombat : MonoBehaviour
 {
 
     public GameObject attackCollider;
+    public GameObject slash;
+
+    int a = 0;
 
     private bool cool = false;
     
@@ -19,6 +22,13 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(a == 5) {
+            slash.SetActive(false);
+            a = 0;
+        }
+        if (slash.active) {
+            a++;
+        }
         if (attackCollider.active) {
             attackCollider.SetActive(false);
         }
@@ -26,6 +36,8 @@ public class PlayerCombat : MonoBehaviour
             if (!cool) {
                 cool = true;
                 attackCollider.SetActive(true);
+                slash.SetActive(true);
+                slash.transform.Rotate(0, 0, Random.Range(0, 360));
             }
         } else {
             cool = false;
