@@ -76,7 +76,7 @@ public class LevGen : MonoBehaviour
                     } else {
                         Instantiate(
                     room.GetRoom(map[i][j]),
-                    new Vector3(i * 25f, 0f, j * 25f),
+                    new Vector3(i * 25f - 25f*maxRooms, 0f, j * 25f - 25f * maxRooms),
                     Quaternion.identity
                     );
                     }

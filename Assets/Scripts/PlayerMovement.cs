@@ -16,9 +16,15 @@ public class PlayerMovement : MonoBehaviour
     public Sprite sLeft;
     public Sprite sRight;
 
+    private float prevHMov = 0f,
+                  prevVMov = 0f;
+    private float transTime = 0f;
+
 
     Rigidbody rb;
     public float speed;
+
+    private float rot = 0f;
 
     private float prevH = 0f;
     private float prevV = 0f;
@@ -72,24 +78,24 @@ public class PlayerMovement : MonoBehaviour
             }
 
             if (Input.GetAxis("Vertical") < 0 &&
-                Input.GetAxis("Vertical") <= prevH) {
+                Input.GetAxis("Vertical") <= prevV) {
                 mV = -1f;
                 break;
             }
 
             if (Input.GetAxis("Vertical") < 0 &&
-                Input.GetAxis("Vertical") > prevH) {
+                Input.GetAxis("Vertical") > prevV) {
                 break;
             }
 
             if (Input.GetAxis("Vertical") > 0 &&
-                Input.GetAxis("Vertical") >= prevH) {
+                Input.GetAxis("Vertical") >= prevV) {
                 mV = 1f;
                 break;
             }
 
             if (Input.GetAxis("Vertical") > 0 &&
-                Input.GetAxis("Vertical") < prevH) {
+                Input.GetAxis("Vertical") < prevV) {
                 break;
             }
 
@@ -109,6 +115,43 @@ public class PlayerMovement : MonoBehaviour
             playerSR.sprite = sForward;
         } else if (mV == -1f && mH == 0f) {
             playerSR.sprite = sBack;
+        }
+
+
+        if (prevHMov != 0 && prevHMov == mH) {
+            transTime += Time.deltaTime;
+        } else {
+            transTime = 0f;
+        }
+
+        if(transTime > 1f) {
+            gameObject.transform.Rotate(0, mH > 0 ? 90 : -90, 0);
+            rot += mH > 0 ? 90f : -90f;
+            if (rot == 360f) {
+                rot = 0;
+            }
+            if (rot == -90f) {
+                rot = 270f;
+            }
+            transTime = .35f;
+        }
+
+        prevHMov = mH;
+        prevVMov = mV;
+
+        rb.angularVelocity = new Vector3();
+
+        if(rot == 90f) {
+            float temp = mH;
+            mH = mV;
+            mV = -temp;
+        } else if (rot == 180f) {
+            mH = -mH;
+            mV = -mV;
+        } else if (rot == 270f) {
+            float temp = mV;
+            mV = mH;
+            mH = -temp;
         }
 
         rb.velocity = new Vector3(mH * speed, rb.velocity.y, mV * speed);
