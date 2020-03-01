@@ -35,6 +35,7 @@ public class PlayerCombat : MonoBehaviour
         if (Input.GetKey(KeyCode.Space)) {
             if (!cool) {
                 cool = true;
+                GameController.DepleetEnergy(3);
                 attackCollider.SetActive(true);
                 slash.SetActive(true);
                 slash.transform.Rotate(0, 0, Random.Range(0, 360));
