@@ -8,7 +8,7 @@ public class LevGen : MonoBehaviour
     public Room room;
 
 
-
+    
     public GameObject L;
     public GameObject R;
     public GameObject T;
@@ -65,7 +65,7 @@ public class LevGen : MonoBehaviour
         roomsLeft = Random.Range(minRooms, maxRooms);
 
         genRoom(maxRooms, maxRooms);
-
+        
         checkRooms(maxRooms, maxRooms);
 
         for (int i = 0; i < map.Length; i++) {
